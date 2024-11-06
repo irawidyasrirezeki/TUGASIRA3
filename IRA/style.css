@@ -1,0 +1,131 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Styling navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .form-inline input,
+.navbar .form-inline button {
+    border-radius: 20px;
+}
+
+.navbar .btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Tombol keranjang */
+#cart {
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Styling Card Item */
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.card-text.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Efek gambar di card */
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+/* Styling untuk Button Add to Cart */
+.btn-primary.addToCart {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary.addToCart:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Styling untuk kolom di grid */
+.col-4 {
+    padding: 0 10px;
+}
+
+/* Styling untuk row produk */
+.row {
+    margin-top: 20px;
+}
+
+/* Styling untuk kolom keranjang */
+#cart {
+    padding: 10px 15px;
+}
+
+/* Responsivitas untuk tampilan kecil */
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .col-4 {
+        width: 100%;
+    }
+
+    #listBarang {
+        margin-top: 10px;
+    }
+}
